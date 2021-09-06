@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style-medical.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+ 
+  
+
+  <title>Medical Declaration</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="sign-up">
+      <span class="title-sign-up">ĐĂNG KÝ ĐIỂM KIỂM DỊCH!</span>
+      <div class="button-sign-up">
+        ĐĂNG KÝ
+      </div>
+    </div>
+    <div>
+      <a class="text-sign-up">Đăng ký điểm kiểm soát QR Code</a>
+    </div>
+    <div class="d-flex">
+      <div class="btn button-sign-out">
+        <i class="fas fa-sign-out-alt"></i>
+        <span class="ml-5">Đăng xuất</span>		
+      </div>
+    </div>	
+  </div>
+  <div class="body">
+    <div class="form-header">
+      Tờ khai y tế/Vietnam Health Declaration
+    </div>
+    <div class="tab">
+      <button class="tablinks active">
+                Khai di chuyển nội địa
+                <br>
+                For domestic move declaration
+            </button>
+      <button class="tablinks">
+                Cho người nhập cảnh
+                <br>
+                Entry declaration
+            </button>
+      <button class="tablinks">
+                Khai báo toàn dân
+                <br>
+                For domestic guets
+            </button>
+    </div>
+    <div class="form-body mt-20">
+      <div class="d-flex justify-content-between">
+        <span class="title-select-language">Chọn ngôn ngữ để khai báo y tế /Select the language to declare health:</span>
+        <div class="btn btn-update-form">
+          <i class="fa fa-edit"></i>
+          <span>Cập nhật tờ khai</span>
+        </div>
+      </div>
+      <div>
+        <img src="https://tokhaiyte.vn/App/images/Language/vi.jpg" alt="" width="70" height="50" class="img">
+        <img src="https://tokhaiyte.vn/App/images/Language/en.jpg" alt="" width="70" height="50" class="img">
+      </div>
+      <div class="text-center">
+        <p class="text-uppercase-1">Thông tin khai báo y tế</p>
+	 	<br>    
+        <b class="text-uppercase-2">( PHÒNG CHỐNG DỊCH COVID-19 )</b>
+        <br>
+        <b class="text-red-1 text-red">Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự</b>
+	  </div>
+      <div class="declaration">
+        Khai hộ
+        <input type="checkbox">
+      </div>
+      <div class="move">
+        Di chuyển trong nước
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td class="w-50">
+			  <div class="separate">
+              <div class="vehicles">
+                Phương tiện đi lại <em class="text-red">(*)</em>
+              </div>
+              <div>
+                <select class="btn-1">
+                                    <option>Máy bay</option>
+                                    <option>Tàu hỏa</option>
+                                    <option>Ô tô</option>
+                                    <option>Xe máy</option>
+                                </select>
+              </div>
+			  </div>
+            </td>
+            <td class="w-50">
+			  <div class="separate">
+              <div class="code">Mã hiệu chuyến bay</div>
+              <div>
+                <select class="btn-2">
+                                    <option>--Chọn--</option>                                
+                                </select>
+              </div>
+			  </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="w-50">
+			  <div class="separate">
+                <div class="departue">
+                  Nơi đi <em class="text-red">(*)</em></div>
+                <div>
+                  <select class="btn-3">
+                                    <option>-Chọn-</option>
+                                    <option>Máy bay</option>
+                                    <option>Tàu hỏa</option>
+                                    <option>Ô tô</option>
+                                    <option>Xe máy</option>
+                                </select>					
+                </div>
+			  </div>
+            </td>
+            <td class="w-50">
+			  <div class="separate">
+                <div class="point">Điểm đi <em class="text-red">(*)</em>				
+                  <div>
+                    <select class="btn-4">
+                                    <option>-Chọn-</option>
+                  </div>              </select>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="w-50">
+			  <div class="separate">
+              <div class="destination">
+                Nơi đến <em class="text-red">(*)</em>            
+              <div>
+                <select class="btn-5">
+                                    <option>-Chọn-</option>
+                                    <option>Thành phố Hà Nội</option>
+                                    <option>Thành phố Hồ Chí Minh</option>
+                                    <option>Tỉnh An Giang</option>
+                                </select>
+              </div>
+			  </div>
+            </td>
+            <td class="w-50">
+			  <div class="separate">
+                <div class="destination-1">Điểm đến <em class="text-red">(*)</em></div>
+                <div>
+                  <select class="btn-6">
+                                    <option>-Chọn-</option>
+                                </select>
+               </div>
+			  </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="w-50">
+			  <div class="separate">
+                <div class="vehicle">Phương tiện <em class="text-red">(*)</em></div>
+                  <div>				 
+                    <input type="text" class="btn-7">
+			      </div>
+			  </div>
+            </td>
+            <td class="w-50">
+			  <div class="separate">
+                <div class="seats">Số ghế</div>
+                <div>
+                  <input type="text" class="btn-8">
+              </div>
+			  </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="w-50">
+			  <div class="separate">
+              <div class="departure">
+                Ngày khởi hành <em class="text-red">(*)</em>
+              </div>
+              <div>
+                <input type="date" class="btn-9">
+              </div>
+            </td>
+            <td class="w-50">
+            </td>
+          </tr>
+          <tr>
+            <td class="w-50">
+			<div class="separate">
+              <div class="full-name">
+                Họ tên (ghi chữ IN HOA) <em class="text-red">(*)</em>
+              </div>
+              <div>
+                <input type="text" class="btn-10">
+              </div>
+			  </div>
+            </td>
+            <td class="w-50">
+			<div class="separate">
+              <div class="passport">Số hộ chiếu / CMND / CCCD</div>
+              <div><input type="text" class="btn-11"></div>
+			  </div>
+            </td>
+          </tr>
+        </table>
+        <div class="d-flex w-100">
+          <div class="w-33">
+		    <div class="separate">
+		      <div class="born">
+                Năm sinh <em class="text-red">(*)</em></div>
+              <div>
+               <input type="text" class="btn-12">
+              </div>
+			</div>  
+          </div>
+          <div class="w-33">
+		    <div class="separate">
+              <div class="sex">Giới tính <em class="text-red">(*)</em></div>
+              <div class="btn-13">
+                <b><input type="radio" name="gender" checked> Nam</b>
+                <b><input type="radio" name="gender"> Nữ</b>
+                <b><input type="radio" name="gender"> Khác</b>
+              </div>
+			</div>
+          </div>
+          <div class="w-33">
+		  <div class="nationality">Quốc tịch <em class="text-red">(*)</em></div>
+		  <div>
+		    <select class="btn-14">
+			  <option>Việt Nam</option>
+			  <option>Zambia</option>
+			  <option>Lào</option>
+			  <option>Campuchia</option>
+			</select>
+		  </div>
+		  </div>
+		  </div>
+		<div class="address">
+		 <b> Địa chỉ liên lạc tại Việt Nam</b>
+		</div>
+		<div class="d-flex w-100">
+		  <div class="w-33">
+		    <div class="separate">
+		    <div class="province">Tỉnh thành <em class="text-red">(*)</em></div>
+		      <div>
+			    <select class="btn-15">
+			      <option>Chọn</option>
+			      <option>Thành phố Hà Nội</option>
+			      <option>Thành phố Hồ Chí Minh</option>
+			      <option>Tỉnh An Giang</option>
+			      <option>Tỉnh Bà Rịa-Vũng Tàu</option>
+			      <option>Tỉnh Bình Dương</option>
+			    </select>
+			  
+			</div>
+			</div>
+		  </div>
+		  <div class="w-33">
+		  <div class="separate">
+		  <div class="district">
+		    Quận/huyện <em class="text-red">(*)</em></div>
+		      <div>
+		        <select class="btn-16">
+			     <option>Chọn</option>
+			    </select>
+			  </div>
+		    </div>   
+		  </div>
+		  <div class="w-33">
+		    <div class="separate">
+		      <div class="commune">Phường/xã <em class="text-red">(*)</em></div>
+		      <div>
+			    <select class="btn-17">
+			      <option>Chọn</option>
+		        </select>
+			  </div>
+		  </div>
+		</div> 
+	  </div>
+	  <div class="home">
+		Số nhà,phố,tổ dân phố/thôn/đội <em class="text-red">(*)</em>
+		  <div>
+		    <input type="text" class="btn-18">
+		  </div>
+	  </div>
+	  <div class="d-flex w-100">
+	    <div class="w-50">
+		  <div class="separate">
+	        <div class="phone">Điện thoại <em class="text-red">(*)</em></div>
+	          <div>
+		        <input type="text" class="btn-19">		 
+			  </div>
+		  </div>
+		</div>
+		<div class="w-50">
+		<div class="email">Email</div>
+		  <div>
+		    <input type="text" class="btn-20">
+		  </div>	
+		</div>
+	  </div>
+	  <div class="information">
+	    <b>Trong vòng 14 ngày qua, Anh/Chị có đến tỉnh/thành phố, quốc gia/vùng lãnh thổ nào (Có thể đi qua nhiều nơi)</b>
+	  </div>
+	  <div class="btn-21">
+	    <input type="radio" name="gender" checked> Không
+		<input type="radio" name="gender" > Có
+	  </div>
+	  <div class="information">
+	    <b>Trong vòng 14 ngày qua, Anh/Chị có thấy xuất hiện ít nhất 1 trong các dấu hiệu: sốt, ho, khó thở, viêm phổi, đau họng, mệt mỏi không?</b>
+	  </div>
+	  <div class="btn-21">
+	    <input type="radio" name="gender" checked> Không
+		<input type="radio" name="gender" > Có
+	  </div>
+	  <div class="information">
+	  <b>Trong vòng 14 ngày qua, Anh/Chị có tiếp xúc với</b> <em class="text-red">(*)</em>
+	  </div>
+	  <div>
+	  <table>
+		<tr class="one">
+		  <td></td>
+          <td class="rep">Có</td>
+          <td class="rep">Không</td>			
+	    </tr>
+	    <tr class="one">
+		  <td class="two">Người bệnh hoặc nghi ngờ, mắc bệnh COVID-19<em class="text-red">(*)</em></td>
+	      <td>
+		    <input type="radio" name="gender" checked></td>
+		  <td>
+		    <input type="radio" name="gender"></td>
+	    </tr>
+	    <tr class="one">
+		  <td class="two">Người từ nước có bệnh COVID-19 <em class="text-red"></em></td>
+		  <td>
+			<input type="radio" name="gender" checked></td>
+		  <td> 
+			<input type="radio" name="gender"></td>
+		</tr>
+		<tr class="one">
+		  <td class="two">Người có biểu hiện (Sốt, ho, khó thở , Viêm phổi) <em class="text-red"></em></td>
+		  <td>
+			<input type="radio" name="gender" checked></td>
+		  <td>
+			<input type="radio" name="gender"></td>
+		</tr>
+	  </table>
+	  </div>
+	  <div class="code-2">
+	  Mã bảo mật <em class="text-red">(*)</em>
+	  <i class="far fa-sync-alt ml-10"></i>
+	  </div>
+	  <div class="img-code">
+	    <img alt src="https://tokhaiyte.vn/api/Common/Captcha/getCaptcha?returnType=image&site=2001432&width=150&height=50&t=1629900011">
+		<input type="text" class="btn-22">
+	  </div>
+	  <div>
+	  <p style="color: red;" class="footer"> Dữ liệu bạn cung cấp hoàn toàn bảo mật và chỉ phục vụ cho việc phòng chống dịch, thuộc quản lý của Ban chỉ đạo quốc gia về Phòng chống dịch Covid-19. Khi bạn nhấn nút "Gửi" là bạn đã hiểu và đồng ý.</p>
+	  </div>
+	  <div class="button-end">
+	    <div class="send">GỬI TỜ KHAI</div>
+	  </div>
+      </div>
+	</div>
+  </div>
+</body>
+<div class="end">
+  <table class="btn-end">
+    <tr>
+	  <td>
+	    Video hướng dẫn Khai báo y tế nhập cảnh
+	  </td>
+	  <td class="row">
+	    Phần dành cho cán bộ quản lý
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	   Video hướng dẫn Khai báo y tế nội địa 
+	  </td>
+	  <td class="row">
+	    Chào bạn:0817213203
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+        Video hướng dẫn Khai báo y tế tại điểm kiểm soát dịch
+	  </td>
+	  <td class="row">
+	    Hướng dẫn sử dụng
+	  </td>
+	</tr>
+  </table>
+  </div>
+
+</html>
